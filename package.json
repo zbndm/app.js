@@ -1,16 +1,16 @@
 {
-  "name": "@octokit/app",
+  "name": "8qq",
   "publishConfig": {
     "access": "public"
   },
-  "version": "0.0.0-development",
+  "version": "2.0.1",
   "description": "GitHub Apps toolset for Node.js",
   "main": "index.js",
   "scripts": {
     "build": "pika-pack build",
     "lint": "prettier --check {src,test}/* *.md package.json",
     "lint:fix": "prettier --write {src,test}/* *.md package.json",
-    "pretest": "npm run -s lint",
+    "pretest": "pnpm run -s lint",
     "test": "jest --coverage",
     "test:typescript": "npx tsc --noEmit --declaration --noUnusedLocals --esModuleInterop --strict test/typescript-validate.ts"
   },
