@@ -17,8 +17,8 @@ jobs:
           node-version: lts/*
           cache: npm
       - run: npm ci
-      - run: npm run build
+      - run: pnpm run build
       - run: npx semantic-release
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          NPM_TOKEN: ${{ secrets.OCTOKITBOT_NPM_TOKEN }}
+          NPM_TOKEN: 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
